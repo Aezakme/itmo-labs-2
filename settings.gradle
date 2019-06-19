@@ -1,0 +1,6 @@
+rootProject.name = 'lab2-1'
+include 'master'
+include 'slave'
+include 'p2p'
+
+

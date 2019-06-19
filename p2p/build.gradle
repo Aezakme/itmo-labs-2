@@ -1,0 +1,28 @@
+
+plugins {
+    id "java"
+    id 'application'
+    id "org.springframework.boot" version "2.0.3.RELEASE"
+}
+
+mainClassName = 'com.itmo.lab2.Application'
+
+ext {
+    springBootVersion = '2.0.3.RELEASE'
+    springCoreVersion = '5.0.7.RELEASE'
+    swaggerVer = '2.7.0'
+    jsr310Ver = '2.9.1'
+    lombokVer = '1.16.20'
+    thymeleaf = '3.0.9.RELEASE'
+    firebaseAdmin = '5.5.0'
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
+            "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}",
+            "org.springframework.boot:spring-boot-configuration-processor:${springBootVersion}",
+            "io.springfox:springfox-swagger2:${swaggerVer}",
+            "io.springfox:springfox-swagger-ui:${swaggerVer}"
+
+    compile group: 'org.springframework', name: 'spring-core', version: '5.0.7.RELEASE'
+}
